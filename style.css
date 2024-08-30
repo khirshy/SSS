@@ -1,0 +1,197 @@
+/* Reset some default styles */
+body, h1, h2, p, a, button, ul, li, blockquote {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Container for centering content */
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+h1 strong {
+    color: #28a745;
+}
+
+.tagline {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Section Title Styling */
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* Button styling */
+.buttons {
+    margin: 1.5rem 0;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Different colors for Login and Signup buttons */
+.btn.login {
+    background-color: #28a745;
+}
+
+.btn.login:hover {
+    background-color: #218838;
+}
+
+.btn.signin {
+    background-color: #17a2b8;
+}
+
+.btn.signin:hover {
+    background-color: #138496;
+}
+
+/* Features and Benefits Section */
+.features, .benefits-section ul {
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.features p, .benefits-section ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.features p b, .benefits-section ul li b {
+    color: #007bff;
+}
+
+.features p:before, .benefits-section ul li:before {
+    content: '✔️';
+    margin-right: 0.5rem;
+    color: #28a745;
+}
+
+.benefits-section ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #007bff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+blockquote p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #000000;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.875rem;
+}
+
+footer nav a {
+    color: #000000;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        margin: 0.25rem;
+    }
+}

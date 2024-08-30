@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paSSSever</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="greeting">Hello, <span id="username">User</span></h1>
+            <h2 id="welcome-message">Welcome to Your Password Manager</h2>
+        </header>
+
+        <section class="form-section">
+            <h3>Add a New Password</h3>
+            <form id="password-form">
+                <div class="form-group">
+                    <label for="site-name">Site Name</label>
+                    <input type="text" id="site-name" placeholder="e.g., Google" required>
+                </div>
+                <div class="form-group">
+                    <label for="site-url">Site URL</label>
+                    <input type="url" id="site-url" placeholder="e.g., https://www.google.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="site-username">Username</label>
+                    <input type="text" id="site-username" placeholder="Your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="site-password">Password</label>
+                    <div class="password-input">
+                        <input type="password" id="site-password" placeholder="Your password" required>
+                        <button type="button" class="btn-small" id="generate-password">Generate</button>
+                    </div>
+                    <p id="password-strength"></p>
+                </div>
+                <button type="submit" class="btn">Save Password</button>
+            </form>
+        </section>
+
+        <section class="password-list">
+            <h3>Saved Passwords</h3>
+            <input type="text" id="find-password" placeholder="Search by site name..." class="find-password">
+            <ul id="password-list">
+                <!-- Password entries will appear here -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
